@@ -14,6 +14,10 @@
       'app': 'app',
 
       // angular bundles
+      
+
+      'angularfire2': 'npm:angularfire2/bundles',
+      'firebase': 'npm:firebase',
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
       '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
@@ -29,7 +33,16 @@
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
+      
+
+      angularfire2: {
+        main: 'angularfire2.umd.js'
+        },
+      firebase: {
+        main: 'firebase.js'
+      },
       app: {
+        
         defaultExtension: 'js',
         meta: {
           './*.js': {
